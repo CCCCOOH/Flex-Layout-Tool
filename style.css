@@ -48,6 +48,9 @@ button:hover {
 
 .form {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .box {
