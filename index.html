@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Flex</title>
+</head>
+
+<body>
+  <div class="card transition padding" id="container">
+  </div>
+  <div class="card form transition">
+    <div class="row">
+      <button id="add">添加子元素</button>
+      <button id="clear">清空元素</button>
+      <button id="remove">移除子元素</button>
+  </div>
+  <!-- 在设置flex开关 -->
+    <div class="row">
+      <label for="set-flex">设置flex属性</label>
+      <select id="set-flex">
+        <div>
+          <option value="block">display: block</option>
+          <option value="flex">display: flex</option>
+        </div>
+
+      </select>
+    </div>
+<!-- 设置flex方向 -->
+    <div class="row">
+      <label for="flex-direction">flex类型</label>
+      <select name="flex-direction" id="flex-direction">
+        <option value="column">flex-direction: column;</option>
+        <option value="column-reverse">flex-direction: column-reverse;</option>
+        <option value="row">flex-direction: row;</option>
+        <option value="row-reverse">flex-direction: row-reverse;</option>
+      </select>
+    </div>
+<!-- 设置flex换行 -->
+    <div class="row">
+      <label for="wrap">flex-wrap</label>
+      <select name="set-warp" id="set-wrap">
+        <option value="no-wrap">flex-wrap: no-wrap;</option>
+        <option value="wrap">flex-wrap: wrap;</option>
+      <option value="wrap-reverse">flex-wrap: wrap-reverse;</option>
+      </select>
+    </div>
+    <!-- 设置flex的gap -->
+     <div class="row">
+      <label for="gap">设置gap：</label>
+      <input type="range" name="gap" id="gap">
+     </div>
+     <!-- 声明 -->
+      <div class="title">
+        <h1>flex小玩具 by Sy_</h1>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
